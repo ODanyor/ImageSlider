@@ -1,0 +1,23 @@
+{
+  "name": "slider",
+  "version": "1.0.0",
+  "homepage": "https://odanyor.github.io/ImageSlider/",
+  "description": "Multi-functional java-script image slider.",
+  "main": "index.html",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  },
+  "scripts": {
+    "start": "live-server",
+    "deploy": "gh-pages -d ./"
+  },
+  "keywords": [
+    "images",
+    "slider"
+  ],
+  "author": "Dany",
+  "license": "MIT"
+}

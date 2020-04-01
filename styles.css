@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  background: orange;
+  font-family: sans-serif;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-weight: 200;
+  font-size: 32px;
+  letter-spacing: 1.3px;
+  color: #fff;
+}
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 25px;
+  }
+}
+
+.main-container {
+  position: relative;
+  top: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 800px;
+  margin-right: 20px;
+  border: 10px solid #fff;
+  overflow: hidden;
+}
+
+.slide-show {
+  cursor: pointer;
+  position: absolute;
+  top: 8rem;
+  height: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+.progress-line {
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: rgb(130, 240, 255);
+  transition: all 1s ease;
+  z-index: 100;
+}
+
+.buttons {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.buttons button {
+  cursor: pointer;
+  width: 100px;
+  color: #fff;
+  font-size: 45px;
+  font-weight: 900;
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0 15px;
+}
+.buttons button:hover {
+  opacity: 0.7;
+}
+.bubbles {
+  position: relative;
+  top: 10rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+  z-index: 50;
+}
+.bubble {
+  cursor: pointer;
+  margin: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #000;
+}
+
+.sub-container {
+  cursor: grab;
+  position: relative;
+  display: flex;
+  transition: all 0.4s ease;
+}
+
+.img-container {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 800px;
+  height: 500px;
+}
+
+.grab {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}

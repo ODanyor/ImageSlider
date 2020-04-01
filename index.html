@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Very nice JavaScript multi-functional image slider by Dany.">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Slider">
+    <meta name="author" content="Dany">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title>Simple JavaScript Slider</title>
+  </head>
+  <body>
+    <h1>Multi-functional image slider</h1>
+    <div class="slide-show">
+      <img alt="player" src="./static/icons/slideshow.png" width="32px" height="32px" />
+    </div>
+    <div class="main-container">
+      <div class="progress-line"></div>
+      <div class="buttons">
+        <button id="prevBtn">←</button>
+        <button id="nextBtn">→</button>
+      </div>
+
+      <div class="sub-container" style="transform: translateX(0)">
+        <div class="img-container">
+          <div class="grab"></div>
+          <img alt="image" src="./static/images/1.jpg" width="100%" height="auto" />
+        </div>
+        <div class="img-container">
+          <div class="grab"></div>
+          <img alt="image" src="./static/images/2.jpg" width="100%" height="auto" />
+        </div>
+        <div class="img-container">
+          <div class="grab"></div>
+          <img alt="image" src="./static/images/3.jpg" width="100%" height="auto" />
+        </div>
+        <div class="img-container">
+          <div class="grab"></div>
+          <img alt="image" src="./static/images/4.jpg" width="100%" height="auto" />
+        </div>
+        <div class="img-container">
+          <div class="grab"></div>
+          <img alt="image" src="./static/images/5.jpg" width="100%" height="auto" />
+        </div>
+        <div class="img-container">
+          <div class="grab"></div>
+          <img alt="image" src="./static/images/6.jpg" width="100%" height="auto" />
+        </div>
+        <div class="img-container">
+          <div class="grab"></div>
+          <img alt="image" src="./static/images/7.jpg" width="100%" height="auto" />
+        </div>
+      </div>
+    </div>
+
+    <div class="bubbles"></div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
