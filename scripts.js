@@ -87,7 +87,7 @@ subContainer.addEventListener("mousedown", e => {
   isDown = true;
   startX = e.pageX;
 });
-subContainer.addEventListener("mouseup", e => {
+subContainer.addEventListener("mouseup", () => {
   isDown = false;
   if (startX > x + 200) {
     counter--;
@@ -97,10 +97,10 @@ subContainer.addEventListener("mouseup", e => {
     moveSliderImage();
   } else moveSliderImage();
 });
-subContainer.addEventListener("mouseleave", e => (isDown = false));
+subContainer.addEventListener("mouseleave", () => (isDown = false));
 subContainer.addEventListener("mousemove", e => {
   if (!isDown) return; // Stop function from running
   x = e.pageX;
   xWalk = startX - x;
-  subContainer.style.transform = `translateX(${translateX - xWalk * 2}px)`;
+  subContainer.style.transform = `translateX(${translateX - xWalk}px)`;
 });
